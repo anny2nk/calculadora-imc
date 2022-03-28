@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+
+  <header>
+    <h1 class="selecionar">Calculadora IMC</h1>
+  </header>
+
+  <main>
+    <h2>Cálculo IMC</h2>
+
+    <div class="texto">
+      <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+      <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+      <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+    </div>
+
+    <div class="usuario">
+      <div class="calculadora">
+        <div class="container">
+
+          <div class="input">
+            <label>Sexo:</label>
+            <input type="radio" name="sexo" id="masculino" checked="checked">
+            <label class="cheque selecionar" for="masculino">Masculino</label>
+
+            <input type="radio" name="sexo" id="feminino">
+            <label class="cheque selecionar" for="feminino">Feminino</label>
+          </div>
+
+          <div class="input">
+              <label>Idade:</label>
+              <input type="number" id='idade' placeholder="anos">
+          </div>
+
+          <div class="input">
+              <label>Estatura:</label>
+              <input type="number" id='estatura' placeholder="m">
+          </div>
+
+          <div class="input">
+              <label>Peso:</label>
+              <input type="number" id='peso' placeholder="kg">
+          </div>
+
+          <a href="#resultado">
+            <button id='calcular'>Calcular</button>
+          </a>
+        </div> <!--FIM CONTEINER-->
+      </div> <!--FIM CALCULADORA-->
+
+      <div class="result" id='resultado'></div>
+    </div>  <!--FIM USUARIO-->
+
+    <h2>IMC peso normal</h2>
+
+    <div class="texto">
+      <p>Estar dentro da faixa de peso normal é significa ter um peso considerado adequado para sua altura, idade e sexo, de acordo com as faixas do IMC - momento de fazer a manutenção do peso.</p>
+      <p>Para manter o peso é importante manter uma dieta balanceada (não basta alimentos corretos, mas também quantidades corretas) para seu organismo. Devem ser avaliados peso, idade, composição corporal, presença de doenças e/ou comorbidades. Pontos importantes para manter o peso:</p>
+
+      <ul>
+        <li>Não existe alimento 100% bom ou 100% ruim. Varie ao máximo o seu cardápio e não elimine completamente nenhum tipo de alimento. O equilíbrio entre a quantidade e a freqüência com a qual você consome refeições mais calóricas é a garantia do seu sucesso</li>
+        <li>Estabeleça uma rotina alimentar</li>
+        <li>Analise os rótulos dos alimentos. Muitas vezes, os alimentos light contêm uma pequena diferença na quantidade calórica, que nem compensa a troca</li>
+        <li>Praticar atividades físicas de forma regular</li>
+        <li>Descanse e durma o suficiente</li>
+        <li>Para ter uma alimentação saudável é importante que ela seja muito variada e conte com todos os grupos alimentares. Lembrando que produtos alimentares ultraprocessados, como embutidos, bolachas recheadas, entre outros, não entram na conta</li>
+        <li>Aumentar a ingestão de líquidos no dia (mínimo de 2L de água)</li>
+      </ul>
+    </div>
+  </main> <!--FIM MAIN-->
+
+  <div class="final">
+    <div class="contatos">
+      <a href="https://github.com/anny2nk"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="https://acailandia.ifma.edu.br">
+        <img src="img/IFMA.png" width="260">
+      </a>
+    </div>
+    <p>Desenvolvedora: Anny Kevellyn dos Santos Alencar</p>
+    <p>Professor: Carlos</p>
+    <p>
+      <a href="https://github.com/anthonyKld/calculadoraIMC">Diretorio do projeto no github</a>
+    </p>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
